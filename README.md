@@ -45,3 +45,8 @@ You can now open a bash on the "ansible" image, in order to try to play with Ans
 ```
 docker-compose run ansible bash
 ```
+
+Now, test the whole environment with a simple Ansible cmd, per exemple :
+```
+ansible all -m ping
+```
