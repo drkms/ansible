@@ -14,7 +14,7 @@ COPY id_rsa /root/.ssh/
 
 ## Pre-Configure Ansible
 
-RUN echo "blank" >> /etc/ansible/hosts
+RUN echo "\n[webserver]\nblank" >> /etc/ansible/hosts
 RUN sed -i 's/#host_key_checking = False/host_key_checking = False/g' /etc/ansible/ansible.cfg
 
 ## CMD
