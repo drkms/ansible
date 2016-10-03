@@ -50,3 +50,5 @@ Now, test the whole environment with a simple Ansible cmd, per exemple :
 ```
 ansible all -m ping
 ```
+
+Place your playbook to be tested into the 'playbook' folder, you will find them into the 'ansible' image, in ~/playbook/

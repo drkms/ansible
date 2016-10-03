@@ -1,0 +1,11 @@
+- hosts: webserver
+  vars:
+    http_port: 80
+    max_clients: 200
+  remote_user: root
+  tasks:
+  - name: ensure apache is at the latest version
+    apt: name=libapache2-mod-php5 state=latest
+  handlers:
+    - name: restart apache
+      service: name=httpd state=restarted
