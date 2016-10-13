@@ -15,13 +15,11 @@ First clone the project.
 ```
 git clone https://github.com/drkms/ansible.git
 ```
-Then, you should enter the project, and set up a new SSH key.
+Then, you should enter the project, and set up a SSH.
 
-Build each image, and run everything :
+You can easily do it by running the "build" script
 ```
-cd ansible
-cp your_ssh_key-rsa ansible/id_rsa
-cp your_ssh_key-rsa.pub blank/authorized_keys
+./build
 ```
 
 You can now build the images using Docker :
