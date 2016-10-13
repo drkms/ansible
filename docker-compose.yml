@@ -2,5 +2,8 @@ version: '2'
 services:
   ansible:
     image: ansible
+    volumes:
+      - ./playbook:/root/playbook
+                
   blank:
     image: blank
