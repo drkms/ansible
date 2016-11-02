@@ -5,6 +5,7 @@ RUN apt-get update && \
     apt-get install -y openssh-server && \
     apt-get install -y nano && \
     apt-get install -y locate && \
+    apt-get install -y sudo && \
     apt-get install -y python
     
 RUN mkdir /var/run/sshd
